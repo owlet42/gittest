@@ -10,6 +10,9 @@ jobs:
     - name: ls
       run: |
             ls
+    - name: ls
+      run: |
+            ls .
     - name: pwd
       run: |
             pwd
