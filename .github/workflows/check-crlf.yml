@@ -10,8 +10,16 @@ jobs:
 
     - name: check-crlf
       uses: erclu/check-crlf@v1
+      with:
+        path: /github/workspace
       
     - name: Use action to check for CRLF endings
       uses: erclu/check-crlf@v1
       with: # omit this mapping to use default path
-        path: /
+        path: /github/workspace
+        
+    - name: Test
+        run: |
+          pwd
+          ls
+         
