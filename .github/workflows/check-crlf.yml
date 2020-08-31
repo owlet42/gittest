@@ -20,6 +20,9 @@ jobs:
         
     - name: Test
       run: |
-          pwd
-          ls
+            ls
+            ls /github/workspace
+            ls /
+            pwd
+            ls
          
