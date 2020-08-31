@@ -7,12 +7,10 @@ jobs:
     name: check-crlf
     runs-on: ubuntu-latest
     steps:
-    - name: ls
-      run: |
+      - uses: actions/checkout@v2
+      - name: ls
+        run: |
             ls
-    - name: ls
-      run: |
-            ls .
-    - name: pwd
-      run: |
+      - name: pwd
+        run: |
             pwd
