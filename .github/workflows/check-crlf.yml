@@ -7,21 +7,9 @@ jobs:
     name: check-crlf
     runs-on: ubuntu-latest
     steps:
-
-    - name: check-crlf
-      uses: erclu/check-crlf@v1
-      with:
-        path: /github/workspace
-      
-    - name: Use action to check for CRLF endings
-      uses: erclu/check-crlf@v1
-      with: # omit this mapping to use default path
-        path: /github/workspace
-        
-    - name: Test
+    - name: ls
       run: |
             ls
-            ls /
+    - name: pwd
+      run: |
             pwd
-            ls
-         
