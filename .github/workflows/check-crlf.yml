@@ -19,7 +19,7 @@ jobs:
         path: /github/workspace
         
     - name: Test
-        run: |
+      run: |
           pwd
           ls
          
