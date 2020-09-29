@@ -13,5 +13,6 @@ jobs:
     name: paths-B-ls
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - run: ls paths-B
     - run: ls
