@@ -5,7 +5,6 @@ on:
     paths:
     - "paths-B/**"
     - "!paths-B/**.md"
-  push: 
 
 jobs:
 
