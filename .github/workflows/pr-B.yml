@@ -1,0 +1,16 @@
+name: pull_request-path-test
+
+on: 
+  pull_request:
+    paths:
+    - "paths-B/**"
+    - "!paths-B/**.md"
+  post: 
+
+jobs:
+
+  build:
+    name: check-crlf
+    runs-on: ubuntu-latest
+    steps:
+    - run: ls
