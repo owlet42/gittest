@@ -13,5 +13,6 @@ jobs:
     name: check-crlf
     runs-on: ubuntu-latest
     steps:
-    - run: tree
+    - run: ls paths-A
+    - run: ls
 
