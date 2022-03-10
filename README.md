@@ -1,1 +1,2 @@
 # gittest
+just test
