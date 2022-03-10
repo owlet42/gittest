@@ -1,2 +1,3 @@
 # gittest
 just test
+gpg
