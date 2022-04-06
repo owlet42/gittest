@@ -30,6 +30,8 @@ jobs:
           
           if [ $VERSION = "master" ]; then
             TAG=latest
+          else
+            TAG=${VERSION##*v}-release
           fi
           echo "::notice col=5 title=print tag::TAG=$TAG"
           echo "::set-output name=tag::$TAG"
